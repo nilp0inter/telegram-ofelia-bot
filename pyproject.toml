@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "telegram-ofelia-bot"
+version = "0.1.0"
+description = "A voice transcription bot"
+authors = ["Roberto Abdelkader Martínez Pérez <robertomartinezp@gmail.com>"]
+license = "CC0"
+readme = "README.md"
+packages = [{include = "telegram_ofelia_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-telegram-bot = "^20.4"
+openai = "^0.27.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+ipdb = "^0.13.13"
+hypothesis = "^6.82.6"
+black = "^23.7.0"
+ipython = "^8.14.0"
+mypy = "^1.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
